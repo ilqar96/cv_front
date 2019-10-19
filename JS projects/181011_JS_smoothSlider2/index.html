@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style> 
+        .main{
+            position: relative;
+            width: 600px;
+            height: 350px;
+            border:1px solid rgb(122, 121, 121);
+            left:50%;
+            top:100px;
+            transform: translate(-50%);
+            overflow: hidden;
+        }
+        .roll{
+            display: flex;
+            position:absolute;
+            height:350px;
+            background-color: grey;
+            top:0;
+            left: 0;
+        }
+        .item{
+            width: 600px;
+            height: 350px;
+            font-size: 100px;
+            line-height: 350px;
+            text-align: center;
+        }
+        .right ,.left{
+            position: absolute;
+            cursor:pointer;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 350px;
+        }
+        .right{
+            right:0;
+        }
+        .right:active ,.left:active{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="main" id="sliderContainer">
+            <div class="roll" id="sliderRoll">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">1</div>
+                
+            </div>
+            <div class="right">></div>
+            <div class="left">&lt</div>
+        </div>
+
+
+
+
+
+
+
+        <script src="js/main.js"></script>
+</body>
+</html>

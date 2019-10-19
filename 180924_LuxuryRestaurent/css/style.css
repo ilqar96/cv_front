@@ -1,0 +1,256 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+.padding{
+    padding: 4rem 0;
+}
+.sidePadding{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+/* NAVBAR */
+.logo{
+    width: 200px;
+    height: 40px;
+}
+.navbar-nav li{
+    margin-right: 0.9rem;
+}
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.navbar-nav li a i{
+    font-size: 16px !important;
+    padding:0px !important;
+}
+.navbar .btn{
+    padding:2px 0px;
+    font-size: 0.8rem;
+}
+/* SLIDER */
+#mainSliderIndicators .carousel-item img{
+    width: auto;
+    height: 400px;
+}
+ .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin:2px;
+    border:1px solid white;
+    background-color:transparent;
+}
+ .carousel-indicators li:hover{
+    border-color:rgb(223, 111, 6);
+}
+
+#mainSliderIndicators .carousel-indicators{
+    flex-direction: column;
+    top:0;
+    margin:0px 10px;
+}
+.mainSlider::after{
+    content:url(image.jpg);
+    width: 130px;
+    height: 150px;
+    background-color: rgb(228, 61, 117);
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    bottom:-50px;
+    left: 15%;
+
+}
+
+.nav-item .nav-link{
+    color:black;
+    font-weight: bold;
+}
+.phoneUs .nav-item .nav-link i{
+    font-size: 1.5rem;
+    position: relative;
+    bottom:8px;
+}
+.number{
+    font-size: 20px !important;
+}
+.phoneUs .fa-chevron-right{
+    background-color: rgb(223, 111, 6);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:30px;
+}
+/* about section  */
+#aboutSection p{
+    line-height: 2rem;
+}
+
+#aboutSection .imageContainerLeft{
+    margin-right: -15px;
+    margin-bottom: -35px;
+}
+#aboutSection .imageContainerRight{
+    margin-left: -15px;
+    margin-top: -35px;
+}
+/* fixed section  */
+.fixedImg{
+    width: 100%;
+    height:400px;
+    background-image:linear-gradient(rgba(27, 27, 27, 0.9) ,rgba(0,0,0, .8)),  url(..//image/fixed.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/* todaySpecialSlider */
+#todaySpecialSlider .carousel-indicators{
+    top:0px;
+    justify-content: flex-end;
+    margin:20px 20px 0px 0px;
+}
+#todaySpecialSlider{
+    margin-top:-300px;
+}
+
+/* food menu section */
+#foodMenuSection .nav{
+    border-top:1px dashed grey;
+    border-bottom: 1px dashed grey;
+}
+#foodMenuSection .nav-item a{
+    color:black;
+    transition: 0.5s;
+}
+#foodMenuSection .nav-item a:hover{
+    color: rgb(255, 174, 0);
+}
+/* happyClientsSection */
+#happyClientsSection{
+    background-color: #FA4789
+}
+#happyClientsSection .card{
+    background-color:transparent;
+    border:none;
+    margin:auto;
+}
+#happyClientsSection .card img{
+    height: 70px;
+    width: 70px;
+    border:3px solid white;
+}
+.checked{
+    color:yellow;
+    font-size: 0.6rem;
+}
+/* reservation section */
+
+#reserveSection .form-group input{
+    border:none;
+    border-radius: 0px;
+    border-bottom: 1.4px solid rgb(216, 215, 215);
+}
+#reserveSection .input-group-text{
+    border:none;
+    border-bottom: 1.4px solid rgb(216, 215, 215);
+}
+/* Footer section */
+#footerSection a{
+    color:rgb(107, 107, 107);
+    font-weight: 100;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+#footerSection .input-group-text{
+    border:1px solid rgb(107, 107, 107);
+    border-right:none;
+}
+#footerSection input{
+    color:white;
+    padding:25px 5px;
+    border:1px solid rgb(107, 107, 107); 
+    border-left: none;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.footerAppCard{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    width: 80%;
+    margin-bottom: 10px;
+    padding:5px;
+}
+#footerSection .fa-facebook-f ,.fa-twitter,.fa-google-plus-g{
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color:white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+#footerSection .fa-facebook-f:hover,.fa-twitter:hover,.fa-google-plus-g:hover{
+    box-shadow: 0px 0px 15px rgb(58, 141, 219);
+}
+.fa-facebook-f{
+    background-color: #37589B;
+}
+.fa-twitter{
+    background-color: #56ABEC;
+}
+.fa-google-plus-g{
+    background-color: #DB4D37;
+}
+
+/* MEDIA QUERYS    */
+
+@media screen and (max-width: 576px) {
+    #foodMenuSection .nav-item{
+        border-bottom:1px solid rgb(194, 192, 192);
+    }
+    #happyClientsSection{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #mainSliderIndicators .carousel-item img{
+        height: 200px;
+    }
+    .phoneUs{
+        display: none;
+    }
+    #aboutSection .imageContainerLeft,#aboutSection .imageContainerRight{
+        margin:0px;
+    }
+    .footerIcons{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    #mainSliderIndicators .carousel-item img{
+        height: 300px;
+    }
+    .mainSlider::after{
+        display: none !important;
+    }
+    #footerSection .input-group{
+        width: 100% !important;
+    }
+    .footerAppCard{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+
+}

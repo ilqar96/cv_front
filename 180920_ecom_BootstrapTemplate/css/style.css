@@ -1,0 +1,123 @@
+/* HEAD SECTION  */
+.headTop .links a{
+    color:rgb(75, 71, 71);
+    text-transform: capitalize;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.headTop .links a:hover{
+    color:rgb(47, 64, 223) !important;
+}
+
+
+.headLogo .brand img{
+    width:200px;
+    height: auto;
+    padding:1rem;
+}
+.headLogo .btn{
+    border:none;
+    margin:15px;
+}
+
+/* NAVBAR  */
+.navbar{
+    background-color: #fff;
+}
+.navbar .nav-item a{
+    text-transform: uppercase;
+    transition: 0.7s;
+    
+}
+.navbar .nav-item a:hover{
+    background-color:rgb(47, 64, 223);
+    color:#fff !important;
+}
+.navbar .active{
+    background-color:rgb(90, 90, 245) !important;
+}
+
+.fakeImg{
+    width: 100%;
+    height: 400px;
+    background: grey;
+}
+/* SLIDER  */
+.carousel-item .row img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-control-prev-icon {
+    background-image: url("../img/chevron-right-solid.svg") !important;
+    transform: rotateY(180deg);
+   }
+   
+ .carousel-control-next-icon {
+    background-image: url("../img/chevron-right-solid.svg") !important;
+    color:blue;
+}
+
+.mainSlider .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+}
+.mainSlider .carousel-indicators .active{
+    background-color:green ;
+}
+
+/* shippingSection  */
+.shippingSection .row a{
+    color:white;
+    text-decoration: none;
+}
+.shippingSection .col-md-3 div{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/* latestSection */
+.latestSection .image img{
+    height: 200px;
+}
+.latestSection .row h5{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.newPrice{
+    color:rgb(42, 102, 212);
+}
+.oldPrice{
+    text-decoration: line-through;
+}
+
+/* FOOTER SECTION  */
+.footerTop h4{
+    font-size: 32px;
+}
+.footerTop .btn{
+    border-radius: none;
+    width: 100px;
+}
+.products .image img{
+    width: auto;
+    height: 100px;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+

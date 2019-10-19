@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: rgb(153, 153, 152);
+            margin:auto;
+            margin-top: 50px;
+            position: relative
+        }
+
+        .item{
+            width: 5px;
+            height: 200px;
+            background-color: black;
+            transform-origin: bottom;
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        .setClock{
+            margin:auto;
+            margin-top:20px;
+            width:300px;
+            height:40px;
+            background-color: grey;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        input{
+            width: 50px;
+            height:30px;
+
+        }
+        button{
+            margin:10px  auto;
+            display:block;
+        }
+        #second{
+            background-color: red;
+            height: 200px;
+        }
+        #hour{
+            height: 150px;
+            top:50px;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="main">
+        <div class="item" id="second"></div>
+        <div class="item" id="min"></div>
+        <div class="item hh"  id="hour"></div>
+    </div>
+
+    <div class="setClock">
+        <span>Hour</span>
+        <input type="number" placeholder="00" id="hourInput">
+        <span>Miniut</span>
+        <input type="number" placeholder="00" id="minInput">
+    </div>
+    <button type="submit" onclick="setClockTime()">Set Time</button>
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
